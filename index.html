@@ -1,114 +1,85 @@
 <!DOCTYPE html>
-flex: 1 1 calc(50% - 1.5rem);
-min-width: 280px;
-}
-
-
-.card h3 {
-margin-top: 0;
-color: #0a2540;
-}
-
-
-.footer {
 text-align: center;
 padding: 2rem;
-color: #555;
+color: #64748b;
 font-size: 0.9rem;
 }
 
 
-a {
-color: #0a2540;
-text-decoration: none;
-font-weight: bold;
+/* Animations */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px);}
+to { opacity: 1; transform: translateY(0);}
 }
 </style>
 </head>
 <body>
-<header>
-<h1>Afroditi Georgopoulou</h1>
-<p>Project Coordinator • United Kingdom</p>
-</header>
+<section class="hero">
+<h1>Your Name</h1>
+<p>Professional Title • Delivering excellence through innovation, strategy, and corporate impact.</p>
+<a href="#projects" class="btn">View My Work</a>
+</section>
 
 
-<div class="container">
-
-
-<section class="section">
-<h2>About Me </h2>
+<section class="section" id="about">
+<h2>About Me</h2>
 <p>
-Results-driven Project Coordinator with 4+ years’ experience delivering complex research, digital, and data projects. Strong 
-background in budgeting, forecasting, risk management, and operational optimisation. Skilled in coordinating 
-multi-stakeholder teams, supporting analytics workflows, and implementing governance processes. Experienced 
-in automation, reporting, and digital transformation. Keen to apply my project delivery and analytical skills to 
-AI-focused roles streamlining workflows and contributing to scalable, data-driven solutions. 
+A dynamic and results‑oriented professional with expertise in delivering impactful solutions and driving organizational goals forward. Passionate about strategic execution, innovation, and building scalable corporate systems.
 </p>
 </section>
 
 
-<section class="section">
-<h2>Professional Experience</h2>
+<section class="section" id="experience">
+<h2>Experience</h2>
+<div class="grid">
 <div class="card">
-<h3>Job Title — Company Name</h3>
-<p><em>2021 – Present</em></p>
+<h3>Role — Company</h3>
+<p>2021 – Present</p>
 <ul>
-<li>Key responsibility or accomplishment.</li>
-<li>Impact-driven achievement using metrics when possible.</li>
-<li>Corporate-oriented bullet describing leadership or results.</li>
+<li>Led strategic initiatives with measurable outcomes.</li>
+<li>Optimized operations through process improvements.</li>
 </ul>
 </div>
-
-
 <div class="card">
-<h3>Previous Role — Previous Company</h3>
-<p><em>2018 – 2021</em></p>
+<h3>Previous Role — Company</h3>
+<p>2018 – 2021</p>
 <ul>
-<li>Key role responsibilities and accomplishments.</li>
-<li>Significant contribution or project outcome.</li>
+<li>Delivered corporate projects across multiple sectors.</li>
+<li>Improved workflows and enhanced client engagement.</li>
 </ul>
+</div>
 </div>
 </section>
 
 
-<section class="section">
-<h2>Skills</h2>
-<div class="flex">
-<div class="card"><h3>Technical Skills</h3><p>List of relevant tools, software, or technologies.</p></div>
-<div class="card"><h3>Business Skills</h3><p>Leadership, communication, management, strategy, etc.</p></div>
-</div>
-</section>
-
-
-<section class="section">
+<section class="section" id="projects">
 <h2>Projects</h2>
-<div class="flex">
+<div class="grid">
 <div class="card">
-<h3>Project Name</h3>
-<p>Short description of what you built and the professional impact.</p>
+<h3>Project One</h3>
+<p>A modern, corporate‑grade solution built to enhance efficiency.</p>
 </div>
 <div class="card">
-<h3>Another Project</h3>
-<p>Corporate-friendly summary and technologies used.</p>
+<h3>Project Two</h3>
+<p>An innovative project aligned with strategic corporate needs.</p>
+</div>
+<div class="card">
+<h3>Project Three</h3>
+<p>A data‑driven solution delivering measurable performance improvements.</p>
 </div>
 </div>
 </section>
 
 
-<section class="section">
+<section class="section contact" id="contact">
 <h2>Contact</h2>
-<p>
-Email: <a href="mailto:you@example.com">you@example.com</a><br>
-LinkedIn: <a href="#">linkedin.com/in/yourprofile</a>
-</p>
+<p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+<p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
 </section>
 
 
-</div>
-
-
-<div class="footer">© 2025 Your Name — All Rights Reserved</div>
-
-
+<footer>
+© 2025 Your Name — All Rights Reserved
+</footer>
 </body>
 </html>
