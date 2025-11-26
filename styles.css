@@ -195,4 +195,104 @@ footer {
     font-size:2rem;
   }
 }
+/* Premium Hero Background */
+.hero {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow: hidden;
+    text-align: center;
+}
 
+/* Blurred orb effects */
+.hero-bg .orb {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.55;
+    animation: float 14s ease-in-out infinite;
+}
+
+.orb1 {
+    background: rgba(14,165,233,0.55);
+    top: -100px; left: -80px;
+}
+.orb2 {
+    background: rgba(245,158,11,0.45);
+    bottom: -130px; right: -90px;
+    animation-duration: 18s;
+}
+.orb3 {
+    background: rgba(255,255,255,0.08);
+    top: 40%; left: 50%;
+    transform: translateX(-50%);
+    animation-duration: 22s;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-40px) translateX(20px); }
+    100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* Glassmorphic card */
+.premium-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(16px);
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    animation: fadeUp 1.4s ease forwards;
+}
+
+.hero-title.big {
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.6rem;
+}
+
+.hero-sub.subtle {
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+}
+
+/* CTA Buttons */
+.hero-buttons .cta {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(90deg, var(--accent1), var(--accent2));
+    color: #041026;
+    box-shadow: 0 4px 16px rgba(14,165,233,0.35);
+    transition: transform .25s, box-shadow .25s;
+}
+
+.hero-buttons .cta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(14,165,233,0.45);
+}
+
+.hero-buttons .cta.secondary {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+}
+
+.hero-buttons .cta.secondary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(255,255,255,0.15);
+}
