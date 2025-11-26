@@ -7,14 +7,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  // --- Splash screen timeout ---
-window.addEventListener("load", () => {
-    const splash = document.getElementById("splash");
-    setTimeout(() => {
-        splash.style.opacity = "0";
-        splash.style.pointerEvents = "none";
-    }, 2000); // fades out after 2 seconds
-});
+<div id="splash" class="splash"><div class="splash-inner">YOUR LOGO</div></div>
 <nav class="nav">
 <div class="brand">YOUR NAME</div>
 <div class="nav-links">
@@ -88,4 +81,12 @@ window.addEventListener("load", () => {
 </footer>
 <script src="main.js"></script>
 </body>
+  // --- Splash screen timeout ---
+window.addEventListener("load", () => {
+    const splash = document.getElementById("splash");
+    setTimeout(() => {
+        splash.style.opacity = "0";
+        splash.style.pointerEvents = "none";
+    }, 2000); // fades out after 2 seconds
+});
 </html>
