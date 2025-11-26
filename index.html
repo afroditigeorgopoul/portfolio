@@ -7,7 +7,14 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="splash" class="splash"><div class="splash-inner">YOUR LOGO</div></div>
+  // --- Splash screen timeout ---
+window.addEventListener("load", () => {
+    const splash = document.getElementById("splash");
+    setTimeout(() => {
+        splash.style.opacity = "0";
+        splash.style.pointerEvents = "none";
+    }, 2000); // fades out after 2 seconds
+});
 <nav class="nav">
 <div class="brand">YOUR NAME</div>
 <div class="nav-links">
