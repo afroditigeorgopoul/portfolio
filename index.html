@@ -6,87 +6,99 @@
 <title>Your Name — Portfolio</title>
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div id="splash" class="splash"><div class="splash-inner">YOUR LOGO</div></div>
+
+<!-- Removed splash screen -->
+
 <nav class="nav">
 <div class="brand">YOUR NAME</div>
 <div class="nav-links">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="cv.html">CV</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="cv.html">CV</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
 </div>
 </nav>
+
 <header class="hero fancy-hero">
 <div class="hero-overlay"></div>
 <div class="hero-inner fancy">
-<h1 class="hero-title">Your Name</h1>
-<p class="hero-sub">Strategic Leader • Transformation • Business Impact</p>
-<div class="hero-buttons">
-<a class="cta" href="projects.html">Explore Projects</a>
-<a class="cta secondary" href="cv.html">View CV</a>
-</div>
+    <h1 class="hero-title">Your Name</h1>
+    <p class="hero-sub">Strategic Leader • Transformation • Business Impact</p>
+    <div class="hero-buttons">
+        <a class="cta" href="projects.html">Explore Projects</a>
+        <a class="cta secondary" href="cv.html">View CV</a>
+    </div>
 </div>
 </header>
+
 <main>
+
 <section class="section about reveal">
 <div class="container">
-<h2>About</h2>
-<p>Dynamic corporate professional delivering strategy, execution, and business growth.</p>
+    <h2>About</h2>
+    <p>Dynamic corporate professional delivering strategy, execution, and business growth.</p>
 </div>
 </section>
-
 
 <section class="section highlights reveal">
 <div class="container grid">
-<article class="card">
-<h3>Leadership</h3>
-<p>Leading teams to deliver strategy and execution.</p>
-</article>
-<article class="card">
-<h3>Strategy</h3>
-<p>Aligning business goals with measurable outcomes.</p>
-</article>
-<article class="card vivid">
-<h3>Impact</h3>
-<p>Driving growth through cross-functional collaboration.</p>
-</article>
+    <article class="card">
+        <h3>Leadership</h3>
+        <p>Leading teams to deliver strategy and execution.</p>
+    </article>
+    <article class="card">
+        <h3>Strategy</h3>
+        <p>Aligning business goals with measurable outcomes.</p>
+    </article>
+    <article class="card vivid">
+        <h3>Impact</h3>
+        <p>Driving growth through cross-functional collaboration.</p>
+    </article>
 </div>
 </section>
-
 
 <section id="featured" class="section reveal">
 <div class="container">
-<h2>Featured Projects</h2>
-<div class="grid project-grid">
-<a class="project" href="projects.html#p1">
-<div class="project-image" style="background-image:url('assets/p1.jpg')"></div>
-<div class="project-info"><h4>Project One</h4><p>Corporate solution improving efficiency.</p></div>
-</a>
-<a class="project" href="projects.html#p2">
-<div class="project-image" style="background-image:url('assets/p2.jpg')"></div>
-<div class="project-info"><h4>Project Two</h4><p>Strategic innovation program.</p></div>
-</a>
-<a class="project" href="projects.html#p3">
-<div class="project-image" style="background-image:url('assets/p3.jpg')"></div>
-<div class="project-info"><h4>Project Three</h4><p>Data-driven optimization system.</p></div>
-</a>
-</div>
+    <h2>Featured Projects</h2>
+    <div class="grid project-grid">
+
+        <a class="project" href="projects.html#p1">
+            <div class="project-image" style="background-image:url('assets/p1.jpg')"></div>
+            <div class="project-info">
+                <h4>Project One</h4>
+                <p>Corporate solution improving efficiency.</p>
+            </div>
+        </a>
+
+        <a class="project" href="projects.html#p2">
+            <div class="project-image" style="background-image:url('assets/p2.jpg')"></div>
+            <div class="project-info">
+                <h4>Project Two</h4>
+                <p>Strategic innovation program.</p>
+            </div>
+        </a>
+
+        <a class="project" href="projects.html#p3">
+            <div class="project-image" style="background-image:url('assets/p3.jpg')"></div>
+            <div class="project-info">
+                <h4>Project Three</h4>
+                <p>Data-driven optimization system.</p>
+            </div>
+        </a>
+
+    </div>
 </div>
 </section>
+
 </main>
+
 <footer>
 <div class="container footer-inner">© 2025 Your Name — Built with care.</div>
 </footer>
+
 <script src="main.js"></script>
 </body>
-  // --- Splash screen timeout ---
-window.addEventListener("load", () => {
-    const splash = document.getElementById("splash");
-    setTimeout(() => {
-        splash.style.opacity = "0";
-        splash.style.pointerEvents = "none";
-    }, 2000); // fades out after 2 seconds
-});
 </html>
