@@ -9,7 +9,4 @@ els.forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerH
 }
 window.addEventListener('scroll', revealOnScroll);
 document.addEventListener('click', e=>{
-if(e.target.matches('a[href^="#"]')){
-e.preventDefault(); document.querySelector(e.target.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-}
-});
+if(e.target.matches('a[href^
